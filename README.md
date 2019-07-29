@@ -1,6 +1,7 @@
 # vue-markdown-blog
 > Creating a simple blog using Vue with markdown.
 
+## Project forked from [Here](https://github.com/josephharveyangeles/vue-markdown-blog)
 ## Getting started
 ```
 git clone https://github.com/josephharveyangeles/vue-markdown-blog
