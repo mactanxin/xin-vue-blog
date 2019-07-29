@@ -7,12 +7,12 @@ cd /target_dir/
 ```
 ### clone develop分支
 ```shell
-git clone -b develop https://username:password@git.trusfort.com:7443/组织名/仓库名
+git clone -b develop https://username:password@git.github.com:7443/组织名/仓库名
 ```
 ### 添加upstream地址
 
 ```shell
-git remote add upstream https://username:password@@git.trusfort.com:7443/组织名/仓库名
+git remote add upstream https://username:password@@git.github.com:7443/组织名/仓库名
 ```
 
 ## 开发流程
