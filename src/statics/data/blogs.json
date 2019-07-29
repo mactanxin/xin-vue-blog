@@ -1,12 +1,6 @@
 {
   "stories": [
     {
-      "id": "understanding-http-cache",
-      "date": "July 29, 2019",
-      "title": "一张图理解Http缓存",
-      "description": "理解HTTP缓存"
-    },
-    {
       "id": "git-usage",
       "date": "July 27, 2019",
       "title": "Git 使用指南",
