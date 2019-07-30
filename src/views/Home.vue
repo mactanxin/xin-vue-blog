@@ -1,7 +1,10 @@
 <template>
   <div class="home">
     <h1 class="headline center">Xin's-Vue-blog</h1>
-    <img alt="Vue logo" src="../assets/adventure-air-aircraft-2695682.jpg">
+    <LazyImg 
+      data-src="https://i.ibb.co/HKPk0Pz/jj-ying-230105-unsplash.jpg"
+      data-srcset="https://i.ibb.co/L0g2Mgt/jj-ying-230105-unsplash.jpg"
+    />
     <div class="sections">
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
         <h2 class="center">{{section}}</h2>
@@ -21,6 +24,7 @@
 
 <script>
 import BLOGENTRIES from '@/statics/data/blogs.json'
+import LazyImg from '../components/lazyImg';
 
 export default {
   name: 'home',
@@ -28,6 +32,9 @@ export default {
     entries() {
       return BLOGENTRIES
     }
+  },
+  components: {
+    LazyImg
   }
 }
 </script>
