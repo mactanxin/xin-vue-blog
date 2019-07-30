@@ -1,6 +1,12 @@
 {
   "stories": [
     {
+      "id": "http-version-diff",
+      "date": "July 30, 2019",
+      "title": "HTTP各个版本的区别",
+      "description": "如何优雅的谈论HTTP"
+    },
+    {
       "id": "git-usage",
       "date": "July 27, 2019",
       "title": "Git 使用指南",
