@@ -1,5 +1,4 @@
 # Git使用指南
-description: Git开发流程使用指南
 ## 初始化流程
 ### 切换至本地要clone git仓库的目录
 ```shell
