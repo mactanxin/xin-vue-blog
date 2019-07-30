@@ -45,7 +45,12 @@ git commit -m ‘注释’
 git push -u origin feature
 ```
 ### 删除本地feature分支
-`git branch -d feature/myfeature`
+
+```
+git branch -d feature/myfeature
+```
 ## 删除远程分支
-`git push origin :feature`
+```
+git push origin :feature
+```
 
