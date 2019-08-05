@@ -1,6 +1,12 @@
 {
   "stories": [
     {
+      "id": "revert-in-git",
+      "date": "August 5, 2019",
+      "title": "在Git中回滚到指定版本",
+      "description": "如何在Git中让指定文件回滚到指定版本"
+    },
+    {
       "id": "http-version-diff",
       "date": "July 30, 2019",
       "title": "HTTP各个版本的区别",
