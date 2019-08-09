@@ -85,3 +85,22 @@ fileLoadChanged(/evt/) {
     },
 
 ```
+
+## 配合XLSX库读取Excel文件
+### 现在可以使用原生的File API进行文件的读取, 不需要依赖jQuery或者其他组件.
+```javascript
+loadExcel(file){
+      const reader = new FileReader();
+      reader.onload = (e) => {
+          const bstr = e.target.result;
+          const wb = XLSX.read(bstr, {type:'binary'});
+          const wsname = wb.SheetNames[0];
+          const ws = wb.Sheets[wsname];
+          const data = XLSX.utils.sheet_to_json(ws, {header:1});
+          console.info(wb);
+          console.info(data);
+        };
+        reader.readAsBinaryString(file);
+    },
+
+```
