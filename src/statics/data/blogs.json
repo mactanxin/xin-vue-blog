@@ -1,6 +1,12 @@
 {
   "stories": [
     {
+      "id": "deploy-nginx",
+      "date": "August 27, 2019",
+      "title": "在CentOS上使用Nginx部署Vue项目",
+      "description": "当你吃着火锅唱着歌, 突然得到了一台CentOS 7服务器, 不做点什么么?"
+    },
+    {
       "id": "upload-file-with-iView",
       "date": "August 9, 2019",
       "title": "Vue中使用iView上传组件读取文件",
