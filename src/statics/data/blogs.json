@@ -29,6 +29,12 @@
       "date": "July 27, 2019",
       "title": "Git 使用指南",
       "description": "Git分支使用指南"
+    },
+    {
+      "id": "upload-file-with-iView",
+      "date": "July 17, 2019",
+      "title": "iView上传文件",
+      "description": "iView上传文件的那些事"
     }
   ]
 }
