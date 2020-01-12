@@ -1,6 +1,12 @@
 {
   "stories": [
     {
+      "id": "delete-branches-in-git",
+      "date": "Jan 12, 2020",
+      "title": "如何优雅的删除git中无用的分支",
+      "description": "git中通常会有很多分支,无论是开发分支还是修复分支, 在代码合并后就没有用了.这时就可以删掉了, 但是一个个手动删除效率太低了, 那么如何高效删除那些无用的分支呢?"
+    },
+    {
       "id": "deploy-nginx-on-centos",
       "date": "August 27, 2019",
       "title": "在CentOS上使用Nginx部署Vue项目",
