@@ -1,6 +1,12 @@
 {
   "stories": [
     {
+      "id": "lint-before-commit",
+      "date": "Feb 6, 2020",
+      "title": "ESLint before commit your code",
+      "description": "在commit代码前如何自动lint你的代码"
+    },
+    {
       "id": "delete-branches-in-git",
       "date": "Jan 12, 2020",
       "title": "如何优雅的删除git中无用的分支",
