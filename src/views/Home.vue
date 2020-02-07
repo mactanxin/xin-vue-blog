@@ -2,8 +2,8 @@
   <div class="home">
     <h1 class="headline center">Xin's-Vue-blog</h1>
     <LazyImg 
-      lazySrc="https://i.ibb.co/HKPk0Pz/jj-ying-230105-unsplash.jpg"
-      lazySrcset="https://i.ibb.co/L0g2Mgt/jj-ying-230105-unsplash.jpg"
+      lazySrc="https://source.unsplash.com/random"
+      lazySrcset="https://source.unsplash.com/random"
       backgroundColor="#3399ff"
     />
     <div class="sections">
