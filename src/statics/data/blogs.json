@@ -1,4 +1,12 @@
 {
+  "2020": [
+    {
+      "id": "most-common-prefix",
+      "date": "May 27, 2020",
+      "title": "最大公共前缀",
+      "description": "还没写完呢, 施工中🚧"
+    }
+  ],
   "stories": [
     {
       "id": "js-massive-number-in-sum",
