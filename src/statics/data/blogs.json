@@ -1,6 +1,12 @@
 {
   "stories": [
     {
+      "id": "whats-in-flex",
+      "date": "May 25, 2020",
+      "title": "弹性盒子中 flex: 0 1 auto 表示什么意思",
+      "description": "三个参数分别对应的是..."
+    },
+    {
       "id": "lint-before-commit",
       "date": "Feb 6, 2020",
       "title": "ESLint before commit your code",
