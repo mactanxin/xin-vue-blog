@@ -1,6 +1,12 @@
 {
   "2020": [
     {
+      "id": "vue-mvvm",
+      "date": "May 29, 2020",
+      "title": "自己动手写一个MVVM (part1)"
+      "description": ""
+    },
+    {
       "id": "most-common-prefix",
       "date": "May 27, 2020",
       "title": "最大公共前缀",
