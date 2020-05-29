@@ -38,3 +38,33 @@ function getCommon(a, b) {
   return result
 }
 ```
+
+方法2:  
+
+```
+function maxPrefix (strs) {
+  if (!strs || !strs.length) {
+    return '';
+  }
+
+  // 从0开始依次比较
+  let currentIndex = 0;
+
+  while (true) {
+    // 取第一个字符串的当前位字符作为参照
+    const refer = strs[0][currentIndex];
+    // 是否全部匹配
+    const currentAllMatch = strs.reduce((pre, str) => {
+      return pre && str.charAt(currentIndex) === refer;
+    }, true);
+
+    if (currentAllMatch) {
+      currentIndex ++;
+    } else {
+      break;
+    }
+  }
+
+  return strs[0].substring(0, currentIndex);
+}
+```
