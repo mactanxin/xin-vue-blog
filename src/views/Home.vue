@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1 class="headline center">Xin's-Vue-blog</h1>
+    <h1 class="headline center">Xin's-blog</h1>
     <LazyImg 
       lazySrc="https://source.unsplash.com/random"
       lazySrcset="https://source.unsplash.com/random"
