@@ -39,3 +39,35 @@ angular.js 是通过脏值检测的方式比对数据是否有变更，来决定
 <!-- [![示例](https://raw.githubusercontent.com/mactanxin/xin-vue-blog/master/src/statics/images/mvvm.png)](https://tanx.in/2020/vue-mvvm/) -->
 
 ![示例](https://raw.githubusercontent.com/mactanxin/xin-vue-blog/master/src/statics/images/mvvm.png "")
+
+```
+let data = { name: 'Xin' };
+observe(data);
+
+// 此时监听到数据变化👇
+data.name = 'Wow, awesome';
+
+
+function observe(data) {
+  if (!data || typeof data !== 'object') return;
+
+  // 遍历
+  Object.keys(data).forEach(function(key) {
+    defineReactive(data, key, data[key]);
+  })
+};
+
+function defineReactive(data, key, val) {
+  observe(val);
+  Object.defineProperty(data, key, {
+    enumerable: true,
+    configurable: false, //不能再次define
+    get: function () {
+      return val;
+    },
+    set: function (newVal) {
+      val = newVal;
+    }
+  })
+}
+```
