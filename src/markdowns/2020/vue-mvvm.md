@@ -75,4 +75,37 @@ function defineReactive(data, key, val) {
 这样我们已经可以监听每个数据的变化了，那么监听到变化之后就是怎么通知订阅者了，所以接下来我们需要实现一个消息订阅器，很简单，维护一个数组，用来收集订阅者，数据变动触发notify，  
 再调用订阅者的update方法.  
 
-书接下文: part2
+
+```
+function defineReactive(data, key, val) {
+    var dep = new Dep();
+    observe(val); // 监听子属性
+
+    Object.defineProperty(data, key, {
+        // ... 省略
+        set: function(newVal) {
+          if (val === newVal) return;
+            console.log('哈哈哈，监听到值变化了 ', val, ' --> ', newVal);
+            val = newVal;
+            dep.notify(); // 通知所有订阅者
+        }
+    });
+}
+
+function Dep() {
+    this.subs = [];
+}
+Dep.prototype = {
+    addSub: function(sub) {
+        this.subs.push(sub);
+    },
+    notify: function() {
+        this.subs.forEach(function(sub) {
+            sub.update();
+        });
+    }
+};
+```
+
+这里已经实现了一个Observer了，已经具备了监听数据和数据变化通知订阅者的功能. 
+
