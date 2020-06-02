@@ -40,7 +40,7 @@ angular.js 是通过脏值检测的方式比对数据是否有变更，来决定
 
 ![示例](https://raw.githubusercontent.com/mactanxin/xin-vue-blog/master/src/statics/images/mvvm.png "")
 
-```
+```javascript
 let data = { name: 'Xin' };
 observe(data);
 
@@ -75,8 +75,9 @@ function defineReactive(data, key, val) {
 这样我们已经可以监听每个数据的变化了，那么监听到变化之后就是怎么通知订阅者了，所以接下来我们需要实现一个消息订阅器，很简单，维护一个数组，用来收集订阅者，数据变动触发notify，  
 再调用订阅者的update方法.  
 
+更新之后的代码样例👇:  
 
-```
+```javascript
 function defineReactive(data, key, val) {
     var dep = new Dep();
     observe(val); // 监听子属性
@@ -107,5 +108,31 @@ Dep.prototype = {
 };
 ```
 
-这里已经实现了一个Observer了，已经具备了监听数据和数据变化通知订阅者的功能. 
+那么问题来了，谁是订阅者？怎么往订阅器添加订阅者？ 没错，上面的思路整理中我们已经明确订阅者应该是`Watcher`, 而且
+`var dep = new Dep();` 是在 defineReactive方法内部定义的，  
+所以想通过dep添加订阅者，就必须要在闭包内操作，所以我们可以在`getter`里面动手脚：
 
+
+```javascript
+// Observer.js
+Object.defineProperty(data, key, {
+  get: function() {
+    // 由于需要在闭包内添加watcher，所以通过Dep定义一个全局target属性，暂存watcher, 添加完移除
+    Dep.target && dep.addDep(Dep.target);
+    return val;
+  }
+});
+
+// 实现 Watcher.js
+
+Watcher.prototype = {
+  get: function (key) {
+    Dep.target = this;
+    this.value = data[key];
+    Dep.target = null;
+  }
+}
+```
+
+
+这里已经实现了一个Observer了，已经具备了监听数据和数据变化通知订阅者的功能. 
