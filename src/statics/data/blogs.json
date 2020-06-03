@@ -1,6 +1,12 @@
 {
   "2020": [
     {
+      "id": "vue-mvvm-p2",
+      "date": "June 3, 2020",
+      "title": "自己动手写一个MVVM (part2)",
+      "description": "WIP: part 2"
+    },
+    {
       "id": "vue-mvvm",
       "date": "May 29, 2020",
       "title": "自己动手写一个MVVM (part1)",
