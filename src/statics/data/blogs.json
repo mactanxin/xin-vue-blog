@@ -1,6 +1,12 @@
 {
   "2020": [
     {
+      "id": "isArray",
+      "date": "June 8, 2020",
+      "title": "如何判断一个变量是数组",
+      "description": "朋友, 你听说过TypeScript么?"
+    },
+    {
       "id": "vue-mvvm-p2",
       "date": "June 3, 2020",
       "title": "自己动手写一个MVVM (part2)",
