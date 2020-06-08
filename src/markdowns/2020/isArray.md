@@ -16,3 +16,10 @@ if (!Array.isArray) {
   };
 }
 ```
+
+具体使用:
+
+```javascript
+let arr = ['🦉', '🐳', '🐿️'];
+Object.prototype.toString.call(arr) === '[object Array]';
+```
