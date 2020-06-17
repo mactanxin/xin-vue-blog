@@ -2,11 +2,11 @@
   <div class="home">
     <h1 class="headline center">Xin's-blog</h1>
     <div class="center">
-      <h3>
+      <h4>
         感谢你发现了我的博客 😁
         <a href="http://github.com/mactanxin">github</a>
-      </h3>
-      <h3>下面 👇 这张图来自unsplash, 我没有对图片的尺寸进行设置(希望保留原作者的创作)</h3>
+      </h4>
+      <h4>下面 👇 这张图来自unsplash, 我没有对图片的尺寸进行设置(希望保留原作者的创作意图)</h4>
     </div>
     <LazyImg 
       lazySrc="https://source.unsplash.com/random"
@@ -79,6 +79,13 @@ h3 {
     font-size: .98rem;
     float: right;
     font-weight: normal;
+  }
+}
+
+h4 {
+  color: #42b883;
+  &:hover {
+    text-decoration: none;
   }
 }
 
