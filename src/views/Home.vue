@@ -1,8 +1,13 @@
 <template>
   <div class="home">
     <h1 class="headline center">Xin's-blog</h1>
-    <h4 class="headline center">感谢你发现了我的博客 😁</h4> <a href="http://github.com/mactanxin">github</a>
-    <h4 class="headline center">下面👇 这张图来自unsplash, 我没有对图片的尺寸进行设置(希望保留原作者的创作)</h4>
+    <div class="center">
+      <h3>
+        感谢你发现了我的博客 😁
+        <a href="http://github.com/mactanxin">github</a>
+      </h3>
+      <h3>下面 👇 这张图来自unsplash, 我没有对图片的尺寸进行设置(希望保留原作者的创作)</h3>
+    </div>
     <LazyImg 
       lazySrc="https://source.unsplash.com/random"
       lazySrcset="https://source.unsplash.com/random"
