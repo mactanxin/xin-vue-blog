@@ -16,13 +16,13 @@
       "id": "vue-mvvm-p2",
       "date": "June 3, 2020",
       "title": "自己动手写一个MVVM (part2)",
-      "description": "WIP: part 2"
+      "description": "实现 Compile"
     },
     {
       "id": "vue-mvvm",
       "date": "May 29, 2020",
       "title": "自己动手写一个MVVM (part1)",
-      "description": "part 1"
+      "description": "实现 Observer"
     },
     {
       "id": "most-common-prefix",
