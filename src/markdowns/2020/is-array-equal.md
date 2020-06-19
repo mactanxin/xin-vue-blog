@@ -20,7 +20,7 @@ arr === another;
 
 ```javascript
 
-Array.prototype.isEqual = function (arr) {
+Array.prototype.equals = function (arr) {
   if(arr.length !== this.length) {
     return false;
   }
