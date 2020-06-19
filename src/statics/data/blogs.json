@@ -1,6 +1,12 @@
 {
   "2020": [
     {
+      "id": "is-array-equal",
+      "date": "June 19, 2020",
+      "title": "如何比较两个数组是否相等",
+      "description": "你为什么要这么对数组, 数组做错了什么❓"
+    },
+    {
       "id": "vue-mvvm-p3",
       "date": "June 18, 2020",
       "title": "自己动手写一个MVVM (part3)",
