@@ -1,6 +1,12 @@
 {
   "2020": [
     {
+      "id": "quick-zero-dot-three",
+      "date": "June 19, 2020",
+      "title": "0.1 + 0.2 什么时候能得到0.3",
+      "description": "我不听,我不听, 你根本就不懂JavaScript"
+    },
+    {
       "id": "is-array-equal",
       "date": "June 19, 2020",
       "title": "如何比较两个数组是否相等",
