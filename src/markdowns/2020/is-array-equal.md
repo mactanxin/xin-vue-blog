@@ -19,12 +19,11 @@ arr === another;
 自己动手写一个
 
 ```javascript
-
 Array.prototype.equals = function (arr) {
   if(arr.length !== this.length) {
     return false;
   }
-  for (let i = 0; i < arr.length; i++) {
+  for (var i = arr.length - 1; i >= 0; i--) {
     if (this[i] !== arr[i]) {
       return false;
     }
