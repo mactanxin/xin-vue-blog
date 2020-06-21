@@ -1,12 +1,11 @@
 <template>
   <div class="home">
     <h1 class="headline center">Xin's-blog</h1>
+    <LazyImg src="https://forthebadge.com/images/badges/built-with-love.svg" />
     <div class="center">
       <h4>
-        感谢你发现了我的博客 😁 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
-        <a href="http://github.com/mactanxin" target='_blank'>
-          github: <img src="https://forthebadge.com/images/badges/check-it-out.svg" />
-        </a>
+        感谢你发现了我的博客 😁
+        <a href="http://github.com/mactanxin" target='_blank'>github</a>
       </h4>
       <h4>下面 👇 这张图来自unsplash, 我没有对图片的尺寸进行设置(希望保留原作者的创作意图)</h4>
     </div>
