@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1 class="headline center">Xin's-blog</h1>
-    <img src="https://forthebadge.com/images/badges/built-with-love.svg">
+    <LazyImg src="https://forthebadge.com/images/badges/built-with-love.svg" />
     <div class="center">
       <h4>
         感谢你发现了我的博客 😁
