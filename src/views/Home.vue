@@ -7,7 +7,11 @@
         感谢你发现了我的博客 😁
         <a href="http://github.com/mactanxin" target='_blank'>github</a>
       </h4>
-      <h4>下面 👇 这张图来自unsplash, 我没有对图片的尺寸进行设置(希望保留原作者的创作意图)</h4>
+      <h4>
+        下面 👇 这张图来自unsplash, 我没有对图片的尺寸进行设置(希望保留原作者的创作意图) <br>
+        本人转发此图片仅为传达信息之目的并不代表本人对其真实性负责亦不代表本人肯定、认可、否认或鄙视文中观点。
+      </h4>
+      <h4></h4>
     </div>
     <LazyImg 
       lazySrc="https://source.unsplash.com/random"
