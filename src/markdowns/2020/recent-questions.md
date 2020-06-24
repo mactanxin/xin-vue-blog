@@ -14,12 +14,23 @@
 3. [Promise1, Promise2, Promise3, Promise4] 如何安装顺序依序执行?
 
 > 这个还挺tricky的.
-> 可以用 for loop, 我整理一下思路
+> `Promise.all([])` 的话不能保证一定按顺序执行完.
+> `.then()` 一直写的话当然可以, 但是这应该是不符合出题人的本意
+> 可以用 for loop ~~来自提示~~
 
 4. 那 for loop 的话, 是先执行完还是先下标0-3呢?
 
-> 献丑了
+> TBC
 
 5. 说一说 ES6 中的 `Proxy` 了解么?
 
-> 
+> TBC
+
+6. Lighthouse 或 Chrome 开发者的性能调优工具?
+
+7. Web Component 相关
+8. `Object` 对象的方法用过哪些
+9. `Object.defineProperty` 的使用
+10. `Object.create` vs `Object.assign`
+
+> [区别见这里](https://stackoverflow.com/questions/34838294/what-is-difference-between-creating-object-using-object-create-and-object-assi)
