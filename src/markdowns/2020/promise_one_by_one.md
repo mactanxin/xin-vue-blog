@@ -1,6 +1,6 @@
 # Promise 按顺序执行
 
-献丑了, 又献丑了. 最近遇到的问题:
+献丑了, 又献丑了. 最近遇到的问题:  
 (感谢当时提问我的这位大神)
 
 [Promise1, Promise2, Promise3, Promise4] 如何安装顺序依序执行?
@@ -63,7 +63,7 @@ promise_list.reduce((prevPromise, nextPromise) => {
 
 ```
 
-更简洁~~炸裂~~一点的话还可以写成这样: 
+更简洁一点的话还可以写成这样: 
 
 ```javascript
 
@@ -113,7 +113,7 @@ promise_list.reduce(async (prev, next) => {
 }, Promise.resolve());
 ```
 
-继续追问之: 那么为什么数组别的方法不行🤔?
+继续追问之: 那么为什么数组别的方法不行🤔?  
 我们的目标是在当前的 `promise` 执行完之前不去执行下一个, 要完全同步的去执行, 那么:
 
 1. Array.prototype.map()
@@ -124,6 +124,6 @@ promise_list.reduce(async (prev, next) => {
 
 这几个~~弟弟~~都不行.
 
-/Array.prototype.reduce()/ 是特殊的存在.
+*Array.prototype.reduce()* 是特殊的存在.
 
 `Array.prototype.reduce()`可以成功的原因是因为我们可以给当前的promise有返回值, 拿到这个之后再去执行后续的操作.
