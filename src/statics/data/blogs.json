@@ -1,6 +1,12 @@
 {
   "2020": [
     {
+      "id": "promise_one_by_one",
+      "date": "June 27, 2020",
+      "title": "如何让Promise按顺序执行",
+      "description": "炸裂, 原来还能这么玩"
+    },
+    {
       "id": "simple-trie",
       "date": "June 22, 2020",
       "title": "自己动手之 Trie",
