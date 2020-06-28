@@ -4,6 +4,7 @@
         :data-srcset="lazySrcset"
         :style="style"
         class="AppImage"
+        :alt="alt"
     />
 </template>
 
@@ -32,6 +33,10 @@ export default {
             type: Number,
             default: null,
         },
+        alt: {
+            tyep: String,
+            default: 'img'
+        }
     },
     data() {
         return {
