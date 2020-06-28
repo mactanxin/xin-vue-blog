@@ -3,7 +3,7 @@
     {
       "id": "vue-diff",
       "date": "June 28, 2020",
-      "title": "真实DOM, 虚拟DOM与Vue的diff算法"
+      "title": "真实DOM, 虚拟DOM与Vue的diff算法",
       "description": ""
     },
     {
