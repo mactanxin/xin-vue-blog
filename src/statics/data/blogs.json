@@ -4,7 +4,7 @@
       "id": "vue-diff",
       "date": "June 28, 2020",
       "title": "真实DOM, 虚拟DOM与Vue的diff算法",
-      "description": ""
+      "description": "我可能碰到了一个假的DOM"
     },
     {
       "id": "promise_one_by_one",
