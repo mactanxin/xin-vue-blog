@@ -20,11 +20,11 @@
 
 4. 那 for loop 的话, 是先执行完还是先下标0-3呢?
 
-> TBC
+> 先执行完
 
 5. 说一说 ES6 中的 `Proxy` 了解么?
 
-> TBC
+> 后续
 
 6. Lighthouse 或 Chrome 开发者的性能调优工具?
 
@@ -32,5 +32,10 @@
 8. `Object` 对象的方法用过哪些
 9. `Object.defineProperty` 的使用
 10. `Object.create` vs `Object.assign`
+11. webpack中 loader 和 plugin 的区别
+12. webpack中配置 DLL
+13. 自己实现一个单选框, 滚动到底部的时候加载更多选项
+14. VueX的原理, 简单实现
+15. Vue Router的原理, 简单实现
 
 > [区别见这里](https://stackoverflow.com/questions/34838294/what-is-difference-between-creating-object-using-object-create-and-object-assi)
