@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1 class="headline center">Xin's-blog</h1>
-    <LazyImg src="https://forthebadge.com/images/badges/built-with-love.svg" />
+    <LazyImg alt="ForTheBadge" src="https://forthebadge.com/images/badges/built-with-love.svg" />
     <div class="center">
       <h4>
         感谢你发现了我的博客 😁
@@ -17,6 +17,7 @@
       lazySrc="https://source.unsplash.com/random"
       lazySrcset="https://source.unsplash.com/random"
       backgroundColor="#3399ff"
+      alt="unsplash random image"
     />
     <div class="sections">
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
