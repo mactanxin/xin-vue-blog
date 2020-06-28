@@ -94,7 +94,7 @@ VNode和oldVNode都是对象
 
 ### 分析
 
-patch
+### patch
 来看看patch是怎么打补丁的（代码只保留核心部分）
 
 ```javascript
@@ -250,3 +250,21 @@ updateChildren (parentElm, oldCh, newCh) {
 
 * 将`Vnode`的子节点`Vch`和`oldVnode`的子节点`oldCh`提取出来
 * `oldCh`和`vCh`各有两个头尾的变量`StartIdx`和`EndIdx`，它们的2个变量相互比较，一共有4种比较方式。如果4种比较都没匹配，如果设置了key，就会用key进行比较，在比较的过程中，变量会往中间靠，一旦StartIdx>EndIdx表明oldCh和vCh至少有一个已经遍历完了，就会结束比较。
+
+
+粉红色的部分为oldCh和vCh
+
+![区别](https://raw.githubusercontent.com/mactanxin/xin-vue-blog/master/src/statics/images/old-ch.png "")
+
+我们将它们取出来并分别用s和e指针指向它们的头child和尾child
+
+![区别](https://raw.githubusercontent.com/mactanxin/xin-vue-blog/master/src/statics/images/updated-ch.png "")
+
+现在分别对oldS、oldE、S、E两两做sameVnode比较，有四种比较方式，当其中两个能匹配上那么真实dom中的相应节点会移到Vnode相应的位置，这句话有点绕，打个比方
+
+* 如果是oldS和E匹配上了，那么真实dom中的第一个节点会移到最后
+* 如果是oldE和S匹配上了，那么真实dom中的最后一个节点会移到最前，匹配上的两个指针向中间移动
+* 如果四种匹配没有一对是成功的，分为两种情况
+
+如果新旧子节点都存在key，那么会根据oldChild的key生成一张hash表，用S的key与hash表做匹配，匹配成功就判断S和匹配节点是否为sameNode，  如果是，就在真实dom中将成功的节点移到最前面，否则，将S生成对应的节点插入到dom中对应的oldS位置，S指针向中间移动，被匹配old中的节点置为null。
+如果没有key,则直接将S生成新的节点插入真实DOM（ps：这下可以解释为什么v-for的时候需要设置key了，如果没有key那么就只会做四种匹配，就算指针中间有可复用的节点都不能被复用了）
