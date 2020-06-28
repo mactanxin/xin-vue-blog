@@ -1,6 +1,12 @@
 {
   "2020": [
     {
+      "id": "vue-diff",
+      "date": "June 28, 2020",
+      "title": "真实DOM, 虚拟DOM与Vue的diff算法"
+      "description": ""
+    },
+    {
       "id": "promise_one_by_one",
       "date": "June 27, 2020",
       "title": "如何让Promise按顺序执行",
