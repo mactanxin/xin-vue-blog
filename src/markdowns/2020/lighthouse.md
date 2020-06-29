@@ -21,9 +21,9 @@ _Background and foreground colors do not have a sufficient contrast ratio._
 _Add `rel="noopener"` or `rel="noreferrer"` to any external links to improve performance and prevent security vulnerabilities._  
 我的 Github 外链没有加这个`rel`, 查了一下是个新特性
 
-当你浏览一个页面点击一个a标签连接 <a href="www.baidu.com" target="_blank"> 跳转到另一个页面时，
+当你浏览一个页面点击一个a标签连接 `<a href="www.google.com" target="_blank">` 跳转到另一个页面时，
 
-在新打开的页面（baidu）中可以通过 window.opener获取到源页面的部分控制权， 即使新打开的页面是跨域的也照样可以（例如 location 就不存在跨域问题）。  
+在新打开的页面（Google）中可以通过 window.opener获取到源页面的部分控制权， 即使新打开的页面是跨域的也照样可以（例如 location 就不存在跨域问题）。  
 
 ##### `rel=noopener` 新特性
 
