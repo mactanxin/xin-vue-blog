@@ -9,6 +9,16 @@
 
 _Max Potential First Input Delay 170 ms_ 这一项比较低, 有待改进
 
+[详解](https://www.imqianduan.com/tool/fid.html)
+
+### 什么是第一次输入延迟？
+
+第一输入延迟（FID）测量用户首次与您的站点交互时的时间（即，当他们单击链接，点击按钮或使用自定义的JavaScript驱动控件时）到浏览器实际能够的时间回应这种互动。
+
+作为编写响应事件的代码的开发人员，我们经常假设我们的代码将在事件发生后立即运行。 但作为用户，我们经常遇到相反的情况 - 我们在手机上加载了一个网页，试图与它进行交互，然后在没有任何反应时感到沮丧。
+
+通常，输入延迟（或输入延迟）发生是因为浏览器的主线程忙于执行其他操作，因此它无法（尚未）响应用户。 可能发生这种情况的一个常见原因是浏览器正忙于解析并执行应用程序加载的大型JavaScript文件。 虽然它正在这样做，它不能运行任何事件监听器，因为它加载的JavaScript可能会告诉它做其他事情。
+
 ### Accessibility - 92分
 
 _Background and foreground colors do not have a sufficient contrast ratio._
