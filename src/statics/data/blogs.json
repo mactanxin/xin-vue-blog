@@ -1,6 +1,12 @@
 {
   "2020": [
     {
+      "id": "lighthouse",
+      "date": "June 28, 2020",
+      "title": "使用Lighthouse优化个人博客",
+      "description": "不会吧😲, 不会吧😲, 不会还有人没用过Lighthouse吧"
+    },
+    {
       "id": "vue-diff",
       "date": "June 28, 2020",
       "title": "真实DOM, 虚拟DOM与Vue的diff算法",
