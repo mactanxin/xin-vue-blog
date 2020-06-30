@@ -1,10 +1,16 @@
 {
   "2020": [
     {
+      "id": "array-flat",
+      "data": "June 30, 2020",
+      "title": "自己动手实现一个Array.flat()",
+      "description": ""
+    },
+    {
       "id": "lighthouse",
       "date": "June 28, 2020",
       "title": "使用Lighthouse优化个人博客",
-      "description": "不会吧😲, 不会吧😲, 不会还有人没用过Lighthouse吧"
+      "description": "奇怪的事情发生了🤔, Performance分数下降了😮"
     },
     {
       "id": "vue-diff",
