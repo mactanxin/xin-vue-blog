@@ -1,8 +1,14 @@
 {
   "2020": [
     {
+      "id": "git-merge-theirs",
+      "date": "July 3, 2020",
+      "title": "一行命令快速合并新老分支",
+      "description": "答应我, 别再删除分支然后新建了好么"
+    },
+    {
       "id": "array-flat",
-      "data": "June 30, 2020",
+      "date": "June 30, 2020",
       "title": "自己动手实现一个Array.flat()",
       "description": ""
     },
