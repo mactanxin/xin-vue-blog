@@ -1,6 +1,12 @@
 {
   "2020": [
     {
+      "id": "new",
+      "date": "July 4 2020",
+      "title": "如何实现一个 new 关键字",
+      "description": "???"
+    },
+    {
       "id": "git-merge-theirs",
       "date": "July 3, 2020",
       "title": "一行命令快速合并新老分支",
