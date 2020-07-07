@@ -14,6 +14,18 @@ var name = 'Tom';
 })();
 ```
 
+
+## 第一题
+
+> hello Tom
+
+1. 首先在进入函数作用域当中，获取name属性
+2. 在当前作用域没有找到name
+3. 通过作用域链找到最外层，得到name属性
+4. 执行else的内容，得到Hello Tom
+
+示例代码: 
+
 ```javascript
 var name = 'Tom';
 (function() {
@@ -28,14 +40,8 @@ var name = 'Tom';
 })();
 ```
 
-## 第一题
+## 第二题
 
-> hello Tom
-
-1. 首先在进入函数作用域当中，获取name属性
-2. 在当前作用域没有找到name
-3. 通过作用域链找到最外层，得到name属性
-4. 执行else的内容，得到Hello Tom
 
 ```javascript
 // goodbye jack
@@ -50,8 +56,6 @@ var name = 'Tom';
     }
 })();
 ```
-
-## 第二题
 
 > goodbye jack
 
