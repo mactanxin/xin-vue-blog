@@ -1,6 +1,12 @@
 {
   "2020": [
     {
+      "id": "format-git-commit",
+      "date": "Aug 12, 2020",
+      "title": "使用Commitizen规范git commit信息",
+      "description": "我以前git用的挺好的, 我觉得你这么做没必要"
+    },
+    {
       "id": "translate-md",
       "date": "July 8, 2020",
       "title": "读取markdown解析章节",
