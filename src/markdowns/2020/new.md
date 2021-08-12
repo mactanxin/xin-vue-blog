@@ -2,13 +2,11 @@
 
 
 ```javascript
-function _new(){
-  const obj = {}
-  const Constructor = Array.prototype.shift.call(arguments)
+function _new (func, ...rest) {
+  const obj = Object.create(func.prototype)
 
-  obj.__proto__ = Constructor.prototype
-  const result = Constructor.apply(obj, arguments)
-
-  return typeof result === 'object' ? result : obj
+  // 执行构造函数，改变构造函数的this指针，指向新创建的对象（新对象也就有了构造函数的所有属性）
+  func.apply(obj, rest)
+  return obj
 }
 ```
